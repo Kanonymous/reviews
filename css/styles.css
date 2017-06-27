@@ -1,9 +1,22 @@
-.menu-color{
-    background: white;
+body{
+  background-color: white;
+}
+
+.avatar{
+  background-image: url(../img/lacoste-skyrim.png);
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+}
+
+.background-avatar{
+  background-color: #2c6595;
+  height:100px;
 }
 
 .content-color{
-    background: white;
+  background-color: #d8d8d8;
 }
 
 /* Estilo para Menú */
