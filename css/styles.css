@@ -1,5 +1,11 @@
 body{
   background-color: white;
+  height: 100%;
+}
+
+html,body,.container
+{
+    height:100%;
 }
 
 .avatar{
