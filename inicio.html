@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html lang="en" style="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Kanonymous</title>
+    <title>Kanonymous</title>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    </head>
-    <body style="background-image:url(img/background-witcher3.jpg); background-size: cover; background-attachment: fixed;
- background-color:white; background-position: center; background-repeat: no-repeat;">
-        <header>
-            <div class="container">
-                <H1></H1>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body style="background-image:url(img/background-witcher3.jpg); background-size: cover; background-attachment: fixed;
+             background-color:white; background-position: center; background-repeat: no-repeat;">
+  <header>
+      <div class="container">
+          <H1></H1>
+      </div>
+  </header>
+    <div class="container-fluid">
+     <div class="row">
+      <div class="menu-container col-sm-4 col-md-2">
+        <div class="nav-side-menu" >
+          <div class="brand">Kanonymous</div>
+          <div class="container-fluid background-avatar"><div class="container avatar"></div></div>
+          <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+            <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+              <li>
+                <a href="#"><i class="glyphicon glyphicon-home"></i> Inicio </a>
+              </li>
+
+              <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                <a href="#"><i class="glyphicon glyphicon-picture"></i> Capturas ANSEL <span class="arrow"></span></a>
+              </li>
+
+              <ul class="sub-menu collapse" id="products">
+                <li class="active"><a href="#">The Witcher 3</a></li>
+                <li><a href="#">Mass Effect Andromeda</a></li>
+                <li><a href="#">Watch_Dogs 2</a></li>
+              </ul>
+
+
+              <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Análisis <span class="arrow"></span></a>
+              </li>
+
+              <ul class="sub-menu collapse" id="service">
+                <li onclick="metro2033()">Metro 2033</li>
+                <li>Killing Floor</li>
+                <li>EDGE</li>
+              </ul>
+
+              <li>
+              <a href="#">
+              <i class="fa fa-user fa-lg"></i> Perfil
+              </a>
+              </li>
+            </ul>
             </div>
-        </header>
-        <div class="container-fluid">
-           <div class="row">
-                <div class="menu-container col-sm-4 col-md-2">
-                    <div class="nav-side-menu" >
-                        <div class="brand">Kanonymous</div>
-                        <div class="container-fluid background-avatar"><div class="container avatar"></div></div>
-                        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
-                        <div class="menu-list">
-  
-                        <ul id="menu-content" class="menu-content collapse out">
-                            <li>
-                                <a href="#"><i class="glyphicon glyphicon-home"></i> Inicio </a>
-                            </li>
-
-                            <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                            <a href="#"><i class="glyphicon glyphicon-picture"></i> Capturas ANSEL <span class="arrow"></span></a>
-                            </li>
-                            <ul class="sub-menu collapse" id="products">
-                                <li class="active"><a href="#">The Witcher 3</a></li>
-                                <li><a href="#">Mass Effect Andromeda</a></li>
-                                <li><a href="#">Watch_Dogs 2</a></li>
-                            </ul>
-
-
-                            <li data-toggle="collapse" data-target="#service" class="collapsed">
-                            <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Análisis <span class="arrow"></span></a>
-                            </li>  
-                            <ul class="sub-menu collapse" id="service">
-                            <li>Metro 2033</li>
-                            <li>Killing Floor</li>
-                            <li>EDGE</li>
-                            </ul>
-
-                            <li>
-                            <a href="#">
-                            <i class="fa fa-user fa-lg"></i> Perfil
-                            </a>
-                            </li>
-                        </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-0 col-md-1"></div>
-                <div class="content-color col-sm-4 col-md-9">
-                    
-                    <h1>¡Bienvenido/a!<small> </small></h1>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                </div>
-           </div>
         </div>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
+      </div>
+        <div class="col-sm-0 col-md-1"></div>
+        <div class="content-color col-sm-4 col-md-9">
+          <div id="content-changer">
+            </br>
+            <h1>¡Bienvenido/a!<small> </small></h1>
+            </br>
+            <p>
+                Soy Kanonymous, y he decidido almacenar mis análisis en este
+                pequeño sitio web. La idea es tener un respaldo de mis análisis,
+                 y un espacio donde
+                compartir otros análisis a videojuegos que no están presentes en
+                 Steam. Además he dejado un espacio para ciertas capturas
+                 realizadas con ANSEL, las cuales
+                siempre son muy agradables de ver. </br></br>
+
+                Probablemente llegaste aquí a través de mi perfil de Steam, pero
+                 si ese no ha sido el caso, dejo a continuación todos los datos
+                 para contactarme:
+                <ul>
+                    <li><a href="http://steamcommunity.com/id/kanonymous/">Perfil de Steam.</a></li>
+                    <li><a href="http://store.steampowered.com/curator/26867057/"><b>Sígueme como mentor en Steam.</b></a></li>
+                </ul>
+
+                También los invito a pasar por <a href="https://discord.gg/9xaPyec"><b>mis canales de Discord</b></a>.
+
+                <br/></br>
+            </p>
+            <h3>La misión</h3>
+            <p>
+                El objetivo de este sitio es, principalmente, ayudar a esa
+                compra que te está haciendo dudar si realmente realizarla o no.
+                La intención
+                siempre es ser lo más objetivo posible, y no dejarse llevar por
+                la ira colectiva que de pronto se tiene contra cierta compañía,
+                saga, etc. De igual manera,
+                evitar las consecuencias del hype y las posturas de fanático
+                absoluto.
+                </br>
+                Así mismo, espero que así como gustas de leer mis análisis,
+                puedas generar tus propias opiniones. Me gustaría que más gente
+                escribiera sus análisis de videojuegos,
+                y no que fuesen por aquí y por allí haciendo un "copiar y pegar"
+                 de lo que dice el youtuber de turno, o un mentor como yo.
+
+                <br/></br>
+            </p>
+            <h3>Esto no es una revista de videojuegos</h3>
+            <p>
+                Aclaro que mis análisis están alejados de lo que verás en un
+                sitio web dedicado a videojuegos (PCGamer, 3DJuegos,
+                Meristation, etc). Mis análisis son
+                una simple opinión, lo más ajustado a la objetividad. Tampoco
+                tendré análisis de un estreno, como lo hacen aquellas páginas,
+                porque mi pensamiento es que un
+                título debe ser analizado desde una perspectiva donde tu
+                experiencia fue óptima: Jugar 30 horas seguidas para terminar el
+                título más reciente no es, para mi, una manera de disfrutar un
+                videojuego.
+
+                <br></br>
+
+                Sin más que agregar, espero que tengas una buena estadía aquí :)
+            </p>
+            <br></br>
+          </div>
+        </div>
+     </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/reviews.js"></script>
+  </body>
 </html>
