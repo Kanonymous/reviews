@@ -8,6 +8,6 @@ function metro2033(){
          document.getElementById("content-changer").innerHTML = xhttp.responseText;
       }
   };
-  xhttp.open("GET", "../metro2033.html", true);
+  xhttp.open("GET", "/reviews/metro2033.html", true);
   xhttp.send();
 }
