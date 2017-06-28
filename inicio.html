@@ -49,9 +49,9 @@
               </li>
 
               <ul class="sub-menu collapse" id="service">
-                <li id="r-metro2033" class="" onclick="metro2033()">Metro 2033</li>
-                <li id="r-killingfloor" class="" onclick="killingfloor()">Killing Floor</li>
-                <li id="r-edge" class="" onclick="edge()">EDGE</li>
+                <li id="r-metro2033" onclick="metro2033()">Metro 2033</li>
+                <li id="r-killingfloor" onclick="killingfloor()">Killing Floor</li>
+                <li id="r-edge" onclick="edge()">EDGE</li>
               </ul>
 
               <li>
@@ -145,7 +145,7 @@
             if (this.readyState == 4 && this.status == 200) {
                // Typical action to be performed when the document is ready:
                document.getElementById("content-changer").innerHTML = xhttp.responseText;
-               document.getElementById("metro2033").classList.add("active");
+               document.getElementById("r-metro2033").classList.add("active");
             }
         };
         xhttp.open("GET", "metro2033.html", true);
@@ -160,7 +160,7 @@
             if (this.readyState == 4 && this.status == 200) {
                // Typical action to be performed when the document is ready:
                document.getElementById("content-changer").innerHTML = xhttp.responseText;
-               document.getElementById("killingfloor").classList.add("active");
+               document.getElementById("r-killingfloor").classList.add("active");
             }
         };
         xhttp.open("GET", "killingfloor.html", true);
