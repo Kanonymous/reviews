@@ -38,7 +38,7 @@
               </li>
 
               <ul class="sub-menu collapse" id="products">
-                <li class="active"><a href="#">The Witcher 3</a></li>
+                <li><a href="#">The Witcher 3</a></li>
                 <li><a href="#">Mass Effect Andromeda</a></li>
                 <li><a href="#">Watch_Dogs 2</a></li>
               </ul>
@@ -49,9 +49,9 @@
               </li>
 
               <ul class="sub-menu collapse" id="service">
-                <li onclick="metro2033()">Metro 2033</li>
-                <li>Killing Floor</li>
-                <li>EDGE</li>
+                <li id="r-metro2033" onclick="metro2033()">Metro 2033</li>
+                <li id="r-killingfloor" onclick="killingfloor()">Killing Floor</li>
+                <li id="r-edge" onclick="edge()">EDGE</li>
               </ul>
 
               <li>
@@ -138,18 +138,34 @@
     <!--script src="reviews.js"></script-->
     <script>
       function metro2033(){
-      document.title = 'Metro 2033 - Análisis por Kanonymous';
+        document.title = 'Metro 2033 - Análisis por Kanonymous';
 
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-             // Typical action to be performed when the document is ready:
-             document.getElementById("content-changer").innerHTML = xhttp.responseText;
-          }
-      };
-      xhttp.open("GET", "metro2033.html", true);
-      xhttp.send();
-    }
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+               // Typical action to be performed when the document is ready:
+               document.getElementById("content-changer").innerHTML = xhttp.responseText;
+               document.getElementById("metro2033").class = "active";
+            }
+        };
+        xhttp.open("GET", "metro2033.html", true);
+        xhttp.send();
+      }
+
+      function metro2033(){
+        document.title = 'Killing Floor - Análisis por Kanonymous';
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+               // Typical action to be performed when the document is ready:
+               document.getElementById("content-changer").innerHTML = xhttp.responseText;
+               document.getElementById("killingfloor").class = "active";
+            }
+        };
+        xhttp.open("GET", "killingfloor.html", true);
+        xhttp.send();
+      }
     </script>
   </body>
 </html>
