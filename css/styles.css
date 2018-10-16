@@ -8,6 +8,10 @@ html,body,.container
     height:100%;
 }
 
+h4{
+  color: #387fbc;
+}
+
 .avatar{
   background-image: url(../img/lacoste-skyrim.png);
   background-size: cover;
@@ -56,7 +60,7 @@ html,body,.container
   margin: 0px;
   line-height: 35px;
   cursor: pointer;
-  /*    
+  /*
     .collapsed{
        .arrow:before{
                  font-family: FontAwesome;
