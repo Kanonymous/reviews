@@ -55,7 +55,7 @@
               </li>
 
               <ul class="sub-menu collapse" id="products">
-                <li><a href="#">The Witcher 3</a></li>
+                <li class="active"><a href="#">The Witcher 3</a></li>
                 <li><a href="#">Mass Effect Andromeda</a></li>
                 <li><a href="#">Watch_Dogs 2</a></li>
               </ul>
@@ -66,9 +66,9 @@
               </li>
 
               <ul class="sub-menu collapse" id="service">
-                <li id="r-metro2033" onclick="metro2033()">Metro 2033</li>
-                <li id="r-killingfloor" onclick="killingfloor()">Killing Floor</li>
-                <li id="r-edge" onclick="edge()">EDGE</li>
+                <li onclick="metro2033()">Metro 2033</li>
+                <li>Killing Floor</li>
+                <li>EDGE</li>
               </ul>
 
               <li>
@@ -86,6 +86,7 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -96,5 +97,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
             integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
             crossorigin="anonymous"></script>
+=======
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--script src="reviews.js"></script-->
+    <script>
+      function metro2033(){
+      document.title = 'Metro 2033 - Análisis por Kanonymous';
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+             // Typical action to be performed when the document is ready:
+             document.getElementById("content-changer").innerHTML = xhttp.responseText;
+          }
+      };
+      xhttp.open("GET", "metro2033.html", true);
+      xhttp.send();
+    }
+    </script>
+>>>>>>> parent of 9c30905... Añadiendo más JS
   </body>
 </html>
