@@ -1,0 +1,16 @@
+body{
+	background-image:url(https://image.ibb.co/nM1Sd0/20180820212339-1.jpg);
+	background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#container-review{
+	background-color:rgba(200, 200, 200, 0.9);
+}
+
