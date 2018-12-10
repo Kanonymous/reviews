@@ -1,3 +1,9 @@
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 #container-review{
 	background-color:rgba(200, 200, 200, 0.85);
 }
@@ -68,4 +74,5 @@
 
 .modal-body{
 	background-color:rgba(200, 200, 200, 0.85);
+	padding:2px;
 }
