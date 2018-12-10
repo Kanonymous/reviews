@@ -60,3 +60,12 @@
 #card8:hover{
 	opacity: 0.7;
 }
+
+.modal-dialog {
+	width: 100%;
+	max-width:80%;
+}
+
+.modal-body{
+	background-color:rgba(200, 200, 200, 0.85);
+}
