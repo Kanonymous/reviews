@@ -76,3 +76,10 @@
 	background-color:rgba(200, 200, 200, 0.85);
 	padding:2px;
 }
+
+@media screen and (max-width:640px) {
+    .modal-dialog{
+		width:95%;
+		max-width:none;
+	}
+}
