@@ -99,3 +99,10 @@ body{
 #steam-icon{
 	width:20px;
 }
+
+
+#h3-titles{
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,0.3));
+  border-radius: 3px;
+  
+}
