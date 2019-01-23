@@ -106,3 +106,7 @@ body{
   border-radius: 3px;
   
 }
+
+th, td {
+  padding-left: 15px;
+}
