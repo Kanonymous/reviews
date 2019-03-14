@@ -107,3 +107,16 @@ body{
   
 }
 
+#p-table{
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+tr{
+	border-bottom:1px solid #DEE2E6;	
+}
+
+td{
+	padding-top: 10px; padding-bottom:10px
+}
